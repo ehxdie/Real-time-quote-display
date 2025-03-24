@@ -33,6 +33,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -104,4 +105,61 @@ h1 {
 h2 {
   color: #666;
   margin: 0;
+}
+
+.stop-button {
+  background-color: #dc3545;
+}
+
+.stop-button:hover {
+  background-color: #c82333;
+}
+
+.loading {
+  color: #666;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.loading::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.update-status {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.timestamp {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 5px;
+  font-family: monospace;
 }
