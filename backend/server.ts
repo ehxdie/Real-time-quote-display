@@ -1,8 +1,11 @@
 // src/app.ts
 import express from 'express';
 import cors from 'cors';
-import  quoteRoutes from './routes/quoteRoutes';
+import quoteRoutes from './routes/quoteRoutes';
+import dotenv from 'dotenv';
 
+
+dotenv.config()
 const app = express();
 
 // Middleware
