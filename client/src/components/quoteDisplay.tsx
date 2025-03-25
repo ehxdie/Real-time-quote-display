@@ -1,3 +1,4 @@
+//./src/components/quoteDisplay.tsx
 import React, { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { quoteApi } from '../api/quoteApi';
