@@ -1,8 +1,6 @@
-//./src/components/quoteDisplay.tsx
 import React, { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { quoteApi } from '../api/quoteApi';
-import { Quote } from '../types/quotes';
 
 export function QuoteDisplay() {
     const [symbol, setSymbol] = useState('');
