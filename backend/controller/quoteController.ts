@@ -4,19 +4,17 @@ import debugLib from "debug";
 
 const debug = debugLib("app:quoteController");
 
-/**
- * Get a quote for a specific symbol
- */
 export const getQuoteBySymbol = (req: Request, res: Response): void => {
-    const symbol = req.params.symbol?.trim().toUpperCase();
-
-    if (!symbol) {
-        debug("Validation Error: Symbol is required");
-        res.status(400).json({ error: "Symbol is required" });
-        return;
-    }
-
     try {
+        const symbol = req.params.symbol?.trim().toUpperCase();
+
+        // Validate symbol
+        if (!symbol) {
+            debug("Validation Error: Symbol is required");
+            res.status(400).json({ error: "Symbol is required" });
+            return;
+        }
+
         const quote = getQuote(symbol);
 
         if (!quote) {
@@ -25,10 +23,10 @@ export const getQuoteBySymbol = (req: Request, res: Response): void => {
             return;
         }
 
-        debug(`Quote fetched successfully for symbol: ${symbol}`, quote);
-        res.json(quote);
+        debug(`Quote fetched successfully for symbol: ${symbol}`);
+        res.status(200).json(quote);
     } catch (error) {
-        debug(`Unexpected error while fetching quote for ${symbol}:`, error);
+        debug("Unexpected error:", error);
         res.status(500).json({ error: "Internal server error" });
     }
 };

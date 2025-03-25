@@ -1,4 +1,4 @@
-import { getQuote } from '../../services/quoteService';
+import { getQuote } from '../quoteService';
 
 describe('QuoteService', () => {
     describe('getQuote', () => {
