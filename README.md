@@ -74,11 +74,6 @@ npm start
 PORT=5000
 ```
 
-### Frontend Configuration (.env)
-```
-API_URL=http://localhost:5000/api/quotes
-```
-
 ## Running Tests
 
 ### Backend Tests
