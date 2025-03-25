@@ -120,7 +120,7 @@ Example Response:
     │   ├── api/
     │   ├── components/
     │   ├── types/
-    │   └── tests/
+    │   
 ```
 
 ## Contributing
