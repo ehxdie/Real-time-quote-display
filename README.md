@@ -1,6 +1,6 @@
 # Real-time Stock Quote Display
 
-A full-stack application for real-time stock quote monitoring built with React and Node.js. The application provides real-time stock price updates with configurable polling intervals, supporting multiple stock symbols and an intuitive user interface.
+A full-stack application for real-time stock quote monitoring built with React and Node.js. The application provides real-time stock price updates, supporting multiple stock symbols and an intuitive user interface.
 
 ## Project Overview
 
@@ -10,7 +10,6 @@ The Real-time Stock Quote Display is a modern web application that enables users
 
 ### Quote Monitoring
 - Real-time Stock Price Updates
-- Configurable Polling Intervals
 - Multiple Stock Symbol Support
 - Price History Tracking
 - Dynamic Price Fluctuations
@@ -22,12 +21,6 @@ The Real-time Stock Quote Display is a modern web application that enables users
 - Error Handling
 - Loading States
 
-### Technical Features
-- WebSocket Communication
-- Automatic Price Updates
-- Error Boundary Implementation
-- Comprehensive Test Coverage
-- Type Safety with TypeScript
 
 ## Tech Stack
 
@@ -36,7 +29,6 @@ The Real-time Stock Quote Display is a modern web application that enables users
 - React Query for Data Fetching
 - CSS for Styling
 - Jest & React Testing Library
-- MSW for API Mocking
 
 ### Backend:
 - Node.js
