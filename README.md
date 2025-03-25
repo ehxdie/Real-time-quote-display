@@ -80,12 +80,11 @@ npm start
 ### Backend Configuration (.env)
 ```
 PORT=5000
-DEBUG=app:*
 ```
 
 ### Frontend Configuration (.env)
 ```
-REACT_APP_API_URL=http://localhost:5000/api
+API_URL=http://localhost:5000/api/quotes
 ```
 
 ## Running Tests
@@ -108,7 +107,7 @@ The API provides the following endpoints:
 
 ### Quote Endpoints
 
-- `GET /api/quote/:symbol` - Get real-time quote for a specific symbol
+- `GET /api/quote/:symbol?` - Get real-time quote for a specific symbol
 
 Example Response:
 ```json
@@ -128,7 +127,7 @@ Example Response:
 │   ├── models/
 │   ├── routes/
 │   ├── services/
-│   └── tests/
+│   └── dist/
 └── client/
     ├── src/
     │   ├── api/
@@ -147,12 +146,8 @@ Example Response:
 
 ## Testing
 
-The project includes comprehensive test suites for both frontend and backend:
+The project includes Unit test for both frontend and backend:
 
-- Unit Tests
-- Integration Tests
-- Component Tests
-- API Tests
 
 ## License
 
